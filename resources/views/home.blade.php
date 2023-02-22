@@ -18,9 +18,22 @@
 <body>
 <div class="container">
     <div class="row">
-    foreach($trains as $train)
-
+    <div>
+    @foreach($trains as $train)
+   
     <p>azienda: {{$train['Azienda']}}</p>
+    <p>stazione di partenza: {{$train['stazione_di_partenza']}}</p>
+    <p>stazione di arrivo: {{$train['stazione_di_arrivo']}}</p>
+    <p>stazione di partenza: {{$train['stazione_di_partenza']}}</p>
+    <p>orario di partenza: {{$train['orario_di_partenza']}}</p>
+    <p>orario di arrivo: {{$train['orario_di_arrivo']}}</p>
+    <p>codice treno: {{$train['codice_treno']}}</p>
+    <p>carrozze: {{$train['num_carrozze']}}</p>
+   
+
+
+    @endforeach
+    </div>
     </div>
 </div>
 
